@@ -1,0 +1,9 @@
+.projects {
+  width: 100%;
+}
+
+.projects h6 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}

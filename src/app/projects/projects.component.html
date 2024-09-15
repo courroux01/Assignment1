@@ -1,0 +1,21 @@
+<div class="projects beautifulBox lightBorder">
+  <mat-tab-group>
+    <mat-tab *ngFor="let project of projects" label="{{ project.id }}">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ project.title }}</mat-card-title>
+          <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img [src]="project.image" alt="Project Image" />
+          <h6>Project Description:</h6>
+          <mat-list>
+            <mat-list-item *ngFor="let sentence of project.description">
+              {{ sentence }}
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</div>

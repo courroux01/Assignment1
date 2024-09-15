@@ -1,0 +1,11 @@
+.header h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.header h3,
+.header h5 {
+  color: var(--light);
+  font-weight: 400;
+}
